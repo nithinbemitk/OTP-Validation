@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vbq-b2-VbX">
+                                <rect key="frame" x="10" y="151" width="75" height="66.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP Validation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coX-Mk-Zzd">
+                                <rect key="frame" x="131" y="30" width="112.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZPX-5E-0Rd">
+                                <rect key="frame" x="95" y="151" width="75" height="66.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pwM-rG-UQS">
+                                <rect key="frame" x="180" y="151" width="75" height="66.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jyf-uY-xWH">
+                                <rect key="frame" x="265" y="151" width="75" height="66.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-yn-TxK">
+                                <rect key="frame" x="167.5" y="267.5" width="40" height="30"/>
+                                <state key="normal" title="Verify"/>
+                                <connections>
+                                    <action selector="verifyClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eu0-Ae-R5g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="coX-Mk-Zzd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="26z-Gy-XK8"/>
+                            <constraint firstItem="Vbq-b2-VbX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="4ch-Hw-H9B"/>
+                            <constraint firstItem="pwM-rG-UQS" firstAttribute="width" secondItem="ZPX-5E-0Rd" secondAttribute="width" id="7rt-l3-yDl"/>
+                            <constraint firstItem="pwM-rG-UQS" firstAttribute="bottom" secondItem="ZPX-5E-0Rd" secondAttribute="bottom" id="9xM-nC-GzF"/>
+                            <constraint firstItem="ZPX-5E-0Rd" firstAttribute="top" secondItem="Vbq-b2-VbX" secondAttribute="top" id="CqM-hL-6vc"/>
+                            <constraint firstItem="Jyf-uY-xWH" firstAttribute="leading" secondItem="pwM-rG-UQS" secondAttribute="trailing" constant="10" id="Dpb-vN-fv9"/>
+                            <constraint firstItem="ZPX-5E-0Rd" firstAttribute="width" secondItem="Vbq-b2-VbX" secondAttribute="width" id="I2k-g9-Xe4"/>
+                            <constraint firstItem="pwM-rG-UQS" firstAttribute="leading" secondItem="ZPX-5E-0Rd" secondAttribute="trailing" constant="10" id="KQk-uj-6Fi"/>
+                            <constraint firstItem="Vbq-b2-VbX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="TTQ-St-sOh"/>
+                            <constraint firstItem="pwM-rG-UQS" firstAttribute="top" secondItem="ZPX-5E-0Rd" secondAttribute="top" id="Wfc-WM-HAP"/>
+                            <constraint firstItem="Jyf-uY-xWH" firstAttribute="width" secondItem="pwM-rG-UQS" secondAttribute="width" id="YHo-v4-w5K"/>
+                            <constraint firstItem="Jyf-uY-xWH" firstAttribute="bottom" secondItem="pwM-rG-UQS" secondAttribute="bottom" id="bsf-TD-FVM"/>
+                            <constraint firstItem="ZPX-5E-0Rd" firstAttribute="leading" secondItem="Vbq-b2-VbX" secondAttribute="trailing" constant="10" id="c3j-pQ-U7c"/>
+                            <constraint firstItem="Vbq-b2-VbX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="dfA-uO-PUn"/>
+                            <constraint firstItem="Vbq-b2-VbX" firstAttribute="top" secondItem="coX-Mk-Zzd" secondAttribute="bottom" constant="100" id="gez-0T-xi6"/>
+                            <constraint firstItem="ZPX-5E-0Rd" firstAttribute="bottom" secondItem="Vbq-b2-VbX" secondAttribute="bottom" id="k9r-l9-vfT"/>
+                            <constraint firstItem="ELK-yn-TxK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oAk-wA-25I"/>
+                            <constraint firstItem="coX-Mk-Zzd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tM4-sj-JYn"/>
+                            <constraint firstItem="Jyf-uY-xWH" firstAttribute="top" secondItem="pwM-rG-UQS" secondAttribute="top" id="vJb-GG-MqI"/>
+                            <constraint firstItem="ELK-yn-TxK" firstAttribute="top" secondItem="Vbq-b2-VbX" secondAttribute="bottom" constant="50" id="wcm-Wb-2cA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="otpFour" destination="Jyf-uY-xWH" id="bwL-sV-Pu5"/>
+                        <outlet property="otpOne" destination="Vbq-b2-VbX" id="zO5-E4-6zL"/>
+                        <outlet property="otpThree" destination="pwM-rG-UQS" id="B0r-PP-cGb"/>
+                        <outlet property="otpTwo" destination="ZPX-5E-0Rd" id="fhL-Uc-OQG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
