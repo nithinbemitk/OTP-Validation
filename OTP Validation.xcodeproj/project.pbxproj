@@ -505,6 +505,7 @@
 				CE992FF91ED303E20098547F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE992FFA1ED303E20098547F /* Build configuration list for PBXNativeTarget "OTP ValidationTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +514,7 @@
 				CE992FFC1ED303E20098547F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE992FFD1ED303E20098547F /* Build configuration list for PBXNativeTarget "OTP ValidationUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +523,7 @@
 				CE992FFF1ED303E20098547F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
